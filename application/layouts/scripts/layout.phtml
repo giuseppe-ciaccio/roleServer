@@ -1,0 +1,26 @@
+<?php
+        $this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+        $this->headTitle()->setSeparator(' - ');
+        $this->headTitle('Role Server');
+
+        echo $this->doctype();
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <?php 
+	    echo $this->headMeta();
+	    echo $this->headTitle();
+// 	    echo $this->headScript()->prependFile($this->baseUrl().'/js/frontend.js', 'text/javascript');
+	    echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css');
+// 	    echo $this->jQuery()->addStylesheet('http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/ui-lightness/jquery-ui.css'); 
+    	
+	    
+	?>
+</head>
+<body>
+<div id="content">
+    <?php echo $this->layout()->content; ?>
+</div>
+</body>
+</html>
